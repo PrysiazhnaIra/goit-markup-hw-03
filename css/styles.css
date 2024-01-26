@@ -3,7 +3,16 @@ body {
   color: #434455;
   background-color: #fff;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 a {
   text-decoration: none;
 }
@@ -11,18 +20,66 @@ a {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+/* ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+} */
 
 li {
   list-style-type: none;
 }
 
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* 
+.container { 
+max-width: 
+padding-left:  
+padding-right:  
+margin-left:  
+margin-right:  
+} */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* header */
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -33,6 +90,7 @@ li {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-part {
@@ -40,6 +98,8 @@ li {
 }
 
 .header-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-list-item {
@@ -51,6 +111,8 @@ li {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 .header-link:hover,
 .header-link:focus,
@@ -60,9 +122,12 @@ li {
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-list-item {
@@ -84,6 +149,14 @@ li {
 
 .solutions {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 292px;
+}
+
+.solutions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .solutions-title {
@@ -93,6 +166,7 @@ li {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
 }
 
 .solutions-btn {
@@ -103,6 +177,11 @@ li {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 
 .solutions-btn:hover,
@@ -113,15 +192,20 @@ li {
 /* advantages */
 
 .advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .visually-hidden {
 }
 
 .advantages-list {
+  display: flex;
+  gap: 24px;
 }
 
-.address-list-item {
+.advantages-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .advantages-subtitle {
@@ -144,6 +228,7 @@ li {
 
 .team {
   background-color: #f4f4fd;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -154,27 +239,36 @@ li {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
+  padding-top: 120px;
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-list-item {
   background-color: #fff;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-picture {
+  margin-bottom: 32px;
 }
 
 .team-subtitle {
+  text-align: center;
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-text {
+  text-align: center;
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
@@ -184,6 +278,8 @@ li {
 /* portfolio */
 
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -197,12 +293,18 @@ li {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 24px;
 }
 
 .portfolio-list-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-picture {
+  margin-top: 72px;
+  margin-bottom: 32px;
 }
 
 .portfolio-subtitle {
@@ -211,6 +313,7 @@ li {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -224,6 +327,8 @@ li {
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 101.5px;
+  padding-bottom: 100px;
 }
 
 .footer-link-logo {
@@ -234,6 +339,7 @@ li {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 17.5px;
 }
 
 .footer-link-logo-part {
@@ -244,4 +350,5 @@ li {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
