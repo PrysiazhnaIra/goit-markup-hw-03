@@ -69,6 +69,7 @@ margin-right:
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  margin-bottom: 8px;
 }
 
 /* header */
@@ -150,7 +151,7 @@ margin-right:
 .solutions {
   background-color: #2e2f42;
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
 }
 
 .solutions-container {
@@ -182,6 +183,7 @@ margin-right:
   border-radius: 4px;
   padding: 16px 32px;
   margin-top: 48px;
+  min-width: 169px;
 }
 
 .solutions-btn:hover,
@@ -229,6 +231,7 @@ margin-right:
 .team {
   background-color: #f4f4fd;
   padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .team-title {
@@ -239,8 +242,12 @@ margin-right:
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
-  padding-top: 120px;
+  margin-bottom: 72px;
+}
+
+.employee-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-list {
@@ -251,10 +258,11 @@ margin-right:
 .team-list-item {
   background-color: #fff;
   width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-picture {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .team-subtitle {
@@ -290,21 +298,29 @@ margin-right:
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px 24px;
+  row-gap: 48px;
 }
 
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
 }
 
+.portfolio-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .portfolio-picture {
-  margin-top: 72px;
-  margin-bottom: 32px;
+  /* margin-top: 72px; */
+  /* margin-bottom: 32px; */
 }
 
 .portfolio-subtitle {
@@ -327,7 +343,7 @@ margin-right:
 
 .footer {
   background-color: #2e2f42;
-  padding-top: 101.5px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -339,7 +355,8 @@ margin-right:
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-link-logo-part {
