@@ -69,7 +69,6 @@ margin-right:
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  margin-bottom: 8px;
 }
 
 /* header */
@@ -198,7 +197,8 @@ margin-right:
   padding-bottom: 120px;
 }
 
-.visually-hidden {
+.advantages-title {
+  margin-bottom: 8px;
 }
 
 .advantages-list {
